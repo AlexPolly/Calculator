@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="fw-1 mt-5" style="text-align: center; color: rgb(0, 0, 0);">Calculator</h1>
+    <!-- Calculator Body -->
+    <div class="calc-body mt-5">
+
+        <!-- Calculator Display Screen -->
+        <div class="calc-screen">
+
+            <div id="calc-typed">
+                <input type="text " id="result" class="form-control" placeholder="0" readonly>
+            </div>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="calc-button-row">
+            <button id="seven" onclick="display('7')">7</button>
+            <button id="eight" onclick="display('8')">8</button>
+            <button id="nine" onclick="display('9')">9</button>
+            <button id="mul" onclick="display('*')" class="opt">&#215;</button>
+            <button id="four" onclick="display('4')">4</button>
+            <button id="five" onclick="display('5')">5</button>
+            <button id="six" onclick="display('6')">6</button>
+            <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
+            <button id="one" onclick="display('1')">1</button>
+            <button id="two" onclick="display('2')">2</button>
+            <button id="three" onclick="display('3')">3</button>
+            <button id="add" onclick="display('+')" class="opt">&#43;</button>
+            <button id="zero" onclick="display('0')">0</button>
+            <button id="ac" onclick="resetresult()" class="ac">AC</button>
+            <button id="div" onclick="" class="opt">&#247;</button>
+            <button id="equal" onclick="expreval()" class="opt">&#61;</button>
+            <button id="del" onclick="removelast()">&#9003;</button>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
